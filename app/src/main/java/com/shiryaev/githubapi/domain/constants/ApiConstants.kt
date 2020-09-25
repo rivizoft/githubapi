@@ -10,6 +10,6 @@ object ApiConstants
     const val AUTH_CALLBACK_URL = "rivizoft://callback"
 
     //keys
-    const val GITHUB_CLIENT_ID = "fcac2a939832628fedd9"
-    const val GITHUB_CLIENT_SECRET = "1171cf872786202fb0f6b65b0e1cfadc17763614"
+    const val GITHUB_CLIENT_ID = ""
+    const val GITHUB_CLIENT_SECRET = ""
 }
