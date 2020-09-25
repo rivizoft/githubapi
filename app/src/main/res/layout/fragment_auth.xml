@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.fragments.AuthFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_app"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlue"
+                android:textSize="40sp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/owner_app" />
+
+            <Button
+                android:id="@+id/button_signIn_github"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginTop="100dp"
+                android:text="@string/github_sign_in"
+                android:textColor="@color/colorWhite"
+                android:background="@color/colorDark" />
+
+            <Button
+                android:id="@+id/button_signIn_google"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/google_sign_in"
+                android:textColor="@color/colorWhite"
+                android:background="@color/colorRed" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/or"
+                android:textAllCaps="true"
+                android:layout_marginTop="20dp" />
+
+            <Button
+                android:id="@+id/button_signIn_guest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/guest_sign_in"
+                android:background="@color/colorDarkWhite"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

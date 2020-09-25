@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.fragments.FavoriteFragment"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:focusable="false"
+        android:focusableInTouchMode="true">
+
+        <EditText
+            android:id="@+id/et_search_repos_favorite"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/input"
+            android:lines="1"
+            android:layout_margin="10dp"
+            android:textSize="14sp"
+            android:singleLine="true"
+            android:background="@drawable/search_background"
+            android:paddingStart="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_results_repos_favorite"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:nestedScrollingEnabled="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_search_repos_favorite"
+            app:layout_constraintBottom_toTopOf="@id/button_clear_favorite"/>
+        
+        <Button
+            android:id="@+id/button_clear_favorite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_clear_text"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorRed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar_results_favorite"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/progress_background"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

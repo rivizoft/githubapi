@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginTop="5dp"
+    android:elevation="2dp">
+
+    <TextView
+        android:id="@+id/tv_title_repo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Репозиторий Кирилла"
+        android:textSize="14sp"
+        android:textColor="@color/colorDark"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:singleLine="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="5dp"
+        android:src="@drawable/ic_star"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tv_count_stars"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    
+    <TextView
+        android:id="@+id/tv_count_stars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginEnd="10dp"
+        android:textColor="@color/colorDark"
+        android:text="34k"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
